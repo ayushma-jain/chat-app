@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+//import SignIn from ''
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Chat App Test
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <div className="row">
+          <div className="col-4 col-sm-12">
+            Hi
+          </div>
+          <div className="col-4 col-sm-12">
+            Hello
+          </div>
+          <div className="col-4 col-sm-12">
+            How Are you?
+          </div>
+        </div>
+      </body>
     </div>
   );
 }
