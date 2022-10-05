@@ -1,10 +1,24 @@
 .App {
-  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Baloo_Thambi_2';
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.i-box {
+  border-radius: 10px;
+  border: 2px solid black;
+  height: 700px;
+}
+
+.i-box h3 {
+  font-weight: bold;
+  font-family: 'Baloo_Thambi_2';
+  border-bottom: 5px solid;
+  margin: 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +46,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
