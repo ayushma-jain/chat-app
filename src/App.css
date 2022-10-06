@@ -12,6 +12,7 @@
   border-radius: 10px;
   border: 2px solid black;
   height: 700px;
+  padding: 15px;
 }
 
 .i-box h3 {
@@ -19,6 +20,26 @@
   font-family: 'Baloo_Thambi_2';
   border-bottom: 5px solid;
   margin: 15px;
+}
+
+.p-rel {
+  position: relative;
+}
+
+.chat-box {
+  position: absolute;
+  width: 94%;
+  bottom: 16px;
+}
+
+.message-box {
+  float: right;
+}
+
+.message-box p {
+  text-align: right;
+  display: block;
+  padding: 5px 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
