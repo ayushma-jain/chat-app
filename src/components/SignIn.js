@@ -10,7 +10,7 @@ const SignIn = () => {
                         <form action="">
 
                         <div className="form-outline mb-4">
-                            <input type="email" id="form3Example3" className="form-control form-control-lg"
+                            <input type="email" id="form3Example3" className="form-control form-control-lg text-success"
                             placeholder="Enter a valid email address" />
                             <label className="form-label" for="form3Example3">Email address</label>
                         </div>
@@ -30,9 +30,9 @@ const SignIn = () => {
                             <a href="#!" className="text-body">Forgot password?</a>
                         </div>
                         <div className="text-center text-lg-start mt-4 pt-2">
-                            <button type="button" className="btn btn-primary btn-lg">Login</button>
+                            <button type="button" className="btn btn-success btn-lg">Login</button>
                             <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
-                                className="link-danger">Register</a></p>
+                                className="link-danger text-success">Register</a></p>
                         </div>
 
                         </form>
