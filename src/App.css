@@ -32,13 +32,27 @@
   bottom: 16px;
 }
 
+.box-right {
+  float: right;
+  text-align: right;
+}
+
+.box-left {
+  float: left;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+/*
 .message-box {
   float: right;
 }
 
+*/
 .message-box p {
-  text-align: right;
-  display: block;
+  margin: 2px;
   padding: 5px 20px;
 }
 
@@ -72,7 +86,8 @@
     transform: rotate(360deg);
   }
 }
+
 .form-control:focus {
   border-color: #28a745;
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
-} 
+}
