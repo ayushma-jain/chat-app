@@ -12,7 +12,7 @@ function App() {
     <div className="App" >
       <div className="row">
         <div className="col-lg-4 col-sm-12">
-          <SignIn />
+          <SignIn heading="Sign In"/>
         </div>
         <div className="col-lg-4 col-sm-12">
           <SignUp />

@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const SignIn = () => {
+const SignIn = (props) => {
     return (
         <div className='i-box'>
-            <h3 className='text-success'>Sign In </h3>
+            <h3 className='text-success'>{props.heading}</h3>
             <div className='container-fluid h-custom'>
                 <div className="row d-flex justify-content-center align-items-center h-100">
                     <div className="col-md-12 col-lg-12 col-xl-12 offset-xl-1">
@@ -41,5 +42,11 @@ const SignIn = () => {
             </div>
         </div>
     )
+}
+// SignIn.propTypes= {
+//     heading: PropTypes.string.isRequired
+// }
+SignIn.defaultProps= {
+    heading: 'sign in page'
 }
 export default SignIn;
