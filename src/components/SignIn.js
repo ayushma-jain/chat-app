@@ -48,5 +48,5 @@ const SignIn = (props) => {
 // }
 SignIn.defaultProps= {
     heading: 'sign in page'
-}
+} 
 export default SignIn;
