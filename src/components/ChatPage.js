@@ -2,15 +2,13 @@ import React, { useState } from 'react';
 import Form from "react-bootstrap/Form";
 import { FiSend } from 'react-icons/fi';
 import Button from "react-bootstrap/Button";
+//import EmojiPicker from 'emoji-picker-react';
 
-
-//const chatData = ['Hi', 'Hello', 'How are you?', 'Good! Thank you for asking'];
 const chatData = [
     {
         'user_id': 1,
         'message': 'Hi',
-    }
-    ,
+    },
     {
         'user_id': 2,
         'message': 'Hello',
@@ -56,6 +54,7 @@ const ChatPage = () => {
                     })}
                 </div>
             </div>
+
             <div className='chat-box col-12'>
                 <div className='row'>
                     <Form.Control type="text" className='col-md-10'
@@ -63,6 +62,7 @@ const ChatPage = () => {
                         onChange={handleMessageChange}
                         placeholder="Type start.....">
                     </Form.Control>
+                    {/*<EmojiPicker />*/}
                     <Button className='col-md-2 btn-success' onClick={handleMessageSend}><FiSend /></Button>
                 </div>
             </div>
