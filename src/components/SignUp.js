@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-
 import background from "./beauty.jpg";
 import FormValidator from './FormValidator.js';
 import './Signup.css';
@@ -10,7 +9,7 @@ class SignUp extends Component {
     field: 'username',
     method: 'isEmpty',
     validWhen: false,
-    message: 'Enter full name.'
+    message: 'Enter user name.'
     }, {
     field: 'email',
     method: 'isEmpty',
