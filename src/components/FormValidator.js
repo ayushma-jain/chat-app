@@ -7,9 +7,11 @@ class FormValidator {
     validate(state) {
         let validation = this.valid();
         // for each validation rule
+    
         this.validations.forEach(rule => {
             if(!validation[rule.field].isInvalid) {
-                const field_value = state[rule.field]?.toString()|| '';
+                 const field_value = rule.field;
+               
                 const args = rule.args || [];
                 const validation_method = typeof rule.method === 'string' ? validator[rule.method] : rule.method
                 if(validation_method(field_value, ...args, state) !== rule.validWhen) {
