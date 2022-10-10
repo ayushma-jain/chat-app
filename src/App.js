@@ -8,7 +8,7 @@ import ChatPage from './components/ChatPage.js';
 
 function App() {
   return (
-
+    
     <div className="App" >
       <div className="row">
         <div className="col-lg-4 col-sm-12">
