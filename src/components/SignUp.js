@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import background from "./beauty.jpg";
 import FormValidator from './FormValidator.js';
 import './Signup.css';
+
 class SignUp extends Component {
   constructor() {
     super();
@@ -77,32 +78,35 @@ class SignUp extends Component {
     //console.log(validation);
     return (
       <div className="wrapper">
-        <div className="inner">
-          <div className="image-holder">
+        <div className="inner row">
+          <div className="image-holder col-6">
             <img src={background} alt="hello"></img>
-          </div>
-          <form action="">
-            <h3>Sign Up</h3>
-            <div className="form-holder active {validation.username.isInvalid && 'has-error'}">
-              <input type="text" name="username" placeholder='Username' onChange={this.handleInputChange} className="form-control" />
-              <span className="help-block">{validation.username.message}</span>
-            </div>
-            <div className="form-holder {validation.email.isInvalid && 'has-error'}">
-              <input type="email" name="email" placeholder='Email' onChange={this.handleInputChange} className="form-control" />
-              <span className="help-block">{validation.email.message}</span>
-            </div>
-            <div className="form-holder {validation.pwd.isInvalid && 'has-error'}">
-              <input type="password" name="pwd" placeholder='Password' onChange={this.handleInputChange} className="form-control" />
-              <span className="help-block">{validation.pwd.message}</span>
-            </div>
-            <div className="form-holder {validation.cpwd.isInvalid && 'has-error'}">
-              <input type="password" name="cpwd" placeholder='Confirm Pwd' onChange={this.handleInputChange} className="form-control" />
-              <span className="help-block">{validation.cpwd.message}</span>
-            </div>
-            <div className="form-login">
-              <div><button onClick={this.handleFormSubmit}>Sign up</button></div>
 
+          </div>
+          <form action="" className='col-6'>
+            <div class="row">
+              <h3 className='col-12'>Sign Up</h3>
+              <div className=" col-12 form-holder active {validation.username.isInvalid && 'has-error'}">
+                <input type="text" name="username" placeholder='Username' onChange={this.handleInputChange} className="form-control" />
+                <span className="help-block">{validation.username.message}</span>
+              </div>
+              <div className="form-holder col-12 {validation.email.isInvalid && 'has-error'}">
+                <input type="email" name="email" placeholder='Email' onChange={this.handleInputChange} className="form-control" />
+                <span className="help-block">{validation.email.message}</span>
+              </div>
+              <div className="form-holder col-12 {validation.pwd.isInvalid && 'has-error'}">
+                <input type="password" name="pwd" placeholder='Password' onChange={this.handleInputChange} className="form-control" />
+                <span className="help-block">{validation.pwd.message}</span>
+              </div>
+              <div className="form-holder col-12  {validation.cpwd.isInvalid && 'has-error'}">
+                <input type="password" name="cpwd" placeholder='Confirm Pwd' onChange={this.handleInputChange} className="form-control" />
+                <span className="help-block">{validation.cpwd.message}</span>
+              </div>
+              <div className="form-login col-12">
+                <button onClick={this.handleFormSubmit}>Sign up</button>
+              </div>
             </div>
+
           </form>
         </div>
       </div>
