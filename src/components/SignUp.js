@@ -66,14 +66,14 @@ class SignUp extends Component {
     }
   }
   render() {
-    const myStyle = {
+    /*const myStyle = {
       backgroundImage: `url(${background})`,
       height: '107vh',
       marginTop: '-1px',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
 
-    };
+    };*/
     let validation = this.submitted ? this.validator.validate(this.state) : this.state.validation
     //console.log(validation);
     return (
